@@ -1,0 +1,95 @@
+html {
+  -webkit-print-color-adjust: exact;
+  print-color-adjust: exact;
+}
+body { orphans: 2; widows: 2; overflow-x: hidden; }
+h1 {
+  font-size: 16pt;
+  line-height: 1.45;
+  margin: 0 0 1.1em;
+  padding-bottom: 0.5em;
+  break-after: avoid;
+  text-wrap: balance;
+}
+h2 { margin: 1.35em 0 0.55em; break-after: avoid; break-inside: avoid; text-wrap: balance; }
+h3, h4 { margin: 1.1em 0 0.45em; break-after: avoid; }
+p { overflow-wrap: break-word; word-break: normal; hanging-punctuation: allow-end; text-justify: inter-ideograph; }
+figure {
+  margin: 1.1em 0 1.3em;
+  text-align: center;
+  break-inside: avoid;
+}
+figure img {
+  display: block;
+  max-width: 100%;
+  box-sizing: border-box;
+  height: auto;
+  margin: 0 auto 0.55em;
+  border: 0.5pt solid #d9d9d9;
+}
+figcaption {
+  font-size: 10.5pt;
+  line-height: 1.45;
+  text-align: justify;
+  text-indent: 0;
+  margin: 0 0.4em;
+}
+img { box-sizing: border-box; }
+p.fsrc { font-size: 9.5pt; line-height: 1.4; text-indent: 0; margin: -0.85em 0 1.15em; }
+p.fsrc em { font-style: normal; color: #333; }
+table {
+  width: 100%;
+  margin: 0.35em 0 0.9em;
+  border-collapse: collapse;
+  font-size: 9.5pt;
+  line-height: 1.32;
+  table-layout: auto;
+  break-inside: auto;
+}
+thead { display: table-header-group; }
+tfoot { display: table-footer-group; }
+tr { break-inside: avoid; }
+th, td {
+  font-size: 9.5pt;
+  line-height: 1.32;
+  padding: 2.6pt 3.4pt;
+  border: 0.6pt solid #000;
+  vertical-align: top;
+  overflow-wrap: break-word;
+  word-break: normal;
+  hyphens: none;
+}
+th { background: #ececec; font-weight: bold; text-align: center; vertical-align: middle; }
+tbody tr:nth-child(even) { background: #fafafa; }
+p.tcap {
+  text-align: center;
+  text-indent: 0;
+  font-size: 10.5pt;
+  font-weight: bold;
+  line-height: 1.45;
+  margin: 1.15em 0 0.45em;
+  break-after: avoid;
+}
+p.tnote { font-size: 9.5pt; line-height: 1.45; text-indent: 0; text-align: justify; margin: -0.15em 0 1em; }
+h2.refhead, h1.refhead { margin-top: 1.6em; break-after: avoid; }
+div.refs p {
+  font-size: 10.5pt;
+  line-height: 1.42;
+  text-indent: -2.1em;
+  margin: 0 0 0.42em 2.1em;
+  text-align: left;
+  overflow-wrap: anywhere;
+  break-inside: avoid;
+}
+div.refs span.url { word-break: normal; overflow-wrap: normal; }
+sup.cite {
+  font-size: 0.6em;
+  line-height: 1;
+  vertical-align: baseline;
+  position: relative;
+  top: -0.42em;
+  letter-spacing: 0;
+}
+th sup.cite, td sup.cite { font-size: 0.8em; top: -0.33em; }
+span.keep { white-space: nowrap; }
+a { color: #000; text-decoration: none; overflow-wrap: break-word; }

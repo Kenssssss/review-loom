@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<style xmlns="http://purl.org/net/xbiblio/csl" version="1.0" class="in-text">
+  <info>
+    <title>Review Loom generic numeric</title>
+    <id>https://example.invalid/review-loom/generic-numeric</id>
+    <updated>2026-10-27T00:00:00+00:00</updated>
+  </info>
+  <macro name="author">
+    <names variable="author"><name and="text" delimiter=", " initialize-with=". "/><substitute><text variable="title"/></substitute></names>
+  </macro>
+  <citation collapse="citation-number">
+    <sort><key variable="citation-number"/></sort>
+    <layout prefix="[" suffix="]" delimiter=", "><text variable="citation-number"/></layout>
+  </citation>
+  <bibliography>
+    <sort><key variable="citation-number"/></sort>
+    <layout suffix=".">
+      <text variable="citation-number" prefix="[" suffix="] "/>
+      <text macro="author" suffix=". "/>
+      <text variable="title" suffix=". "/>
+      <text variable="container-title" font-style="italic" suffix=". "/>
+      <date variable="issued" form="numeric" suffix="; "/>
+      <text variable="volume" suffix=" "/>
+      <text variable="issue" prefix="(" suffix=") "/>
+      <text variable="page" suffix=" "/>
+      <text variable="DOI" prefix="https://doi.org/"/>
+    </layout>
+  </bibliography>
+</style>
